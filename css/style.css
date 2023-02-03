@@ -1,0 +1,54 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        border: 1px solid black;
+        display: grid;
+        margin: 50px 25px;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 30px 180px repeat(31, 30px) 50px 50px 57px;
+        grid-template-rows: 50px;
+    }
+    
+    .main div {
+        border: 1px solid black;
+    }
+    
+    .header {
+        display: grid;
+        grid-template-columns: 30px 180px repeat(31, 30px) 50px 50px 57px;
+        grid-template-rows: 30px 100px;
+    }
+    
+    .header div {
+        border: 1px solid black;
+    }
+    
+    .item-days {
+        grid-column-end: span 31;
+    }
+    
+    .days {
+        grid-column-end: span 2;
+    }
+    
+    .item-number,
+    .item-full-name {
+        grid-row-end: span 2;
+    }
+    
+    .item span {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+    }
+    
+    .null {
+        margin-left: 1px;
+        outline: 1px solid white;
+        border: 1px solid white!important;
+    }
