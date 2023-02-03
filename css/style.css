@@ -31,6 +31,7 @@
     
     .item-days {
         grid-column-end: span 31;
+        text-align: center;
     }
     
     .days {
